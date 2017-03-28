@@ -1,0 +1,20 @@
+<div>
+    <form>
+        <p style="flex: 1; display: flex;">
+            <label for="number">单号：</label>
+            <input type="text" name="number" value="{{ number }}" id="number">
+            <input type="submit" value="查询">
+        </p>
+    </form>
+    <p>
+        {% if order and status %}
+            <p>维修单【{{ order.number }}】状态：</p>
+            {% for s in status %}
+                <p>{{ s.text }} <small>[{{ s.created_at }}]</small></p>
+            {% endfor %}
+        {% elif number %}
+            <p>无记录</p>
+        {% endif %}
+    </p>
+</div>
+
