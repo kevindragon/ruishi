@@ -25,7 +25,7 @@ SECRET_KEY = 'n4r!i_*va4_*1)axza_x1tqrnj%u=yv_t++wz%abbp%@2^y4w2'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.kevinjiang.info']
 
 
 # Application definition
